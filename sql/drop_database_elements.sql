@@ -1,0 +1,12 @@
+DROP TRIGGER check_receiver_account_trigger ON Transaction;
+DROP TRIGGER check_account_amount_trigger ON Account;
+DROP FUNCTION check_account_amount();
+DROP FUNCTION check_receiver_account();
+DROP VIEW IF EXISTS Loan_Profit;
+DROP VIEW IF EXISTS Unpaid_Loans;
+DROP VIEW IF EXISTS Foreign_Transactions;
+DROP TABLE Loan CASCADE;
+DROP TABLE Account CASCADE;
+DROP TABLE Connection CASCADE;
+DROP TABLE Transaction CASCADE;
+DROP TABLE Users CASCADE;
